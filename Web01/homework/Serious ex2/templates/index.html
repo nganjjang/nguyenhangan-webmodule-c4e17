@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile's page</title>
+  </head>
+  <body>
+    <h2>This is the profile page of me and my BFF!!!</h2>
+
+    <h4>
+      {% if username in users %}
+        {% for key, value in users[username].items() %}
+          {{ key }} : {{ value }}
+          <br>
+        {% endfor %}
+      {% else %}
+        User not found!!!
+      {% endif %}
+    </h4>
+  </body>
+</html>
