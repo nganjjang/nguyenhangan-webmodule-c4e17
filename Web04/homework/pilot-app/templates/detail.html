@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mùa đông không lạnh</title>
+  </head>
+  <body>
+    <h2><i>Services page in detail</i></h2>
+      <div>
+        <img src="{{ service_detail.image }}" alt="">
+        <h3>
+          <p>{{ service_detail.name }}</p>
+        </h3>
+        <p>Năm sinh: {{ service_detail.yob }}</p>
+        <p>Cao: {{ service_detail.height }} cm </p>
+        <p>Số điện thoại: {{ service_detail.phone }}</p>
+        <p>Địa chỉ: {{ service_detail.address }}</p>
+        <p>Mô tả: {{ service_detail.description }}</p>
+        <p>Số đo 3 vòng: {{ service_detail.measurements }} </p>
+        <p>
+          <a href="{{ url_for('servicerequest')}}">Yêu cầu dịch vụ</a>
+        </p>
+      </div>
+  </body>
+</html>

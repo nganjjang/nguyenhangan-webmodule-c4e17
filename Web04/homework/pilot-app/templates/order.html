@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mùa đông không lạnh</title>
+  </head>
+  <body>
+    <h1>Danh sách yêu cầu</h1>
+    <table border='1px'>
+      <thead>
+        <th>STT</th>
+        <th>Đối tác</th>
+        <th>Người dùng</th>
+        <th>Thời gian yêu cầu</th>
+        <th></th>
+      </thead>
+      <tbody>
+        {% for order in orders %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td></td>
+          <td></td>
+          <td>{{ order.time }}</td>
+          <td>
+            <a href="#">Phê duyệt yêu cầu</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

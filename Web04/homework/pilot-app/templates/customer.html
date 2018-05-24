@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mùa đông không lạnh</title>
+  </head>
+  <body>
+    <h1>Customer page</h1>
+    {% for customer in all_customer %}
+      <div>
+        {% if customer.gender == 0 %}
+          <img src="../static/image/female-profile.jpg" alt="">
+        {% elif customer.gender == 1 %}
+          <img src="../static/image/male-profile.jpg" alt="">
+        {% endif %}
+
+        <p>Name: {{ customer.name }}</p>
+        <p>Gender:
+          {% if customer.gender == 0 %}
+            Female
+          {% elif customer.gender == 1 %}
+            Male
+          {% endif %}
+        </p>
+        <p>Email: {{ customer.email }}</p>
+        <p>Phone: {{ customer.phone }}</p>
+        <p>Job: {{ customer.job }}</p>
+        <p>Company: {{ customer.company }}</p>
+        <p>Contacted:
+          {% if customer.contacted == True %}
+            contacted
+          {% elif customer.contacted == False %}
+            not-yet-contacted
+          {% endif %}
+        </p>
+      </div>
+      <hr>
+    {% endfor %}
+
+  </body>
+</html>
