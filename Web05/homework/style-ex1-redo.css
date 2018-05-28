@@ -1,0 +1,126 @@
+/* #background-ele {
+  height: 650px;
+  width: 100%;
+  background-color: #51b3e8;
+} */
+
+#background-ele {
+  height: 300px;
+  width: 100%;
+  background-image: url('https://vignette.wikia.nocookie.net/dorepedia/images/0/00/Doraemon_logo_vn.png/revision/latest?cb=20150609062613&path-prefix=vi');
+  background-size: contain;
+  background-attachment: inherit;
+}
+
+#flex-box-all {
+  display: flex;
+  height: 650px;
+  flex-direction: column;
+}
+
+#flex-box-body {
+  display: flex;
+  height: 500px;
+}
+
+#flex-box-character {
+  display: flex;
+  height: 500px;
+  width: 80%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flex-box-detail {
+  display: flex;
+  height: 500px;
+  width: 24%;
+  flex-direction: column;
+}
+
+.h-150px {
+  height: 150px;
+}
+
+.h-500px {
+  height: 500px;
+}
+
+.h-300px {
+  height: 300px;
+}
+
+.h-200px {
+  height: 200px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-10 {
+  width: 10%
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.text-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  color: #62b7e5;
+}
+
+.text-character {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #62b7e5;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+}
+
+.p-140-40-40-70 {
+  padding: 140px 40px 40px 70px;
+}
+
+.box-sizing {
+  box-sizing: border-box;
+}
+
+
+#img-doraemon {
+  background-image: url('https://vignette.wikia.nocookie.net/doraemon/images/b/b0/Doraemon_eating_hamburgers_and_drinking.png/revision/latest?cb=20171117165231&path-prefix=en');
+  background-size: cover;
+}
+
+#img-nobita {
+  background-image: url('http://kingsnovel.com/wp-content/uploads/2017/06/doraemon___nobita_duck_face_vector_by_jewel_chanxoxo-d9i99ov.png');
+  background-size: cover;
+}
+
+#img-xeko {
+  background-image: url('http://kingsnovel.com/wp-content/uploads/2017/06/Suneo20Honekawa-from-Doraemon-35893-13671480021.jpg');
+  background-size: cover;
+}
+
+#img-chaien {
+  background-image: url('http://statis.infogame.vn/images/upload/2017/03/30/60_chai-en-5.jpg?w=680');
+  background-size: cover;
+}
